@@ -6,308 +6,532 @@
 html, body{
     width: 100%;
     height: 100%;
+    /* overflow: hidden; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
+
 #main{
     width: 100%;
-    height: 125%;
+    height: 100%;
     background-color: rgb(237, 238, 226);
 }
 
-/* NAVIGATION BAR  */
-.header{
-    height: 12vh;
-    width: 100vw;
-    background-color: rgb(255, 255, 251);
+
+/* ~~~~~~~~~~~~ First Page ~~~~~~~~~~~~~~~~ */
+#first_page{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* **NAVIGATION BAR** */
+#header{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     top: 0;
     left: 0;
     z-index: 1000;
-    position: sticky;
+    position: fixed;
     
 }
-.logo ,#logo{
-    width:10rem;
-    height: 5rem;
-    align-items: center;
-    margin-left: 15px;
-}
 #nav-part1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-start; */
+    /* background-color: green; */
+}
+
+#logo{
+    width:200px;
+    height: 100%;
+    /* align-items: center; */
+    margin-left: 15px;
+    position: absolute;
+}
+#logo img{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+
+#features_left{
+    height: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    justify-content: flex-start;
+    margin-left: 20%;
+    /* padding-right: %;   */
+    padding-left:10%;
+    /* justify-content: space-between; */
+    /* background-color: black; */
+    position: relative;
 }
 .feature{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding-left: 10%;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    /* color: black; */
+ 
 }
-.feature h3{
+/* .feature h3{
     padding: 15px;
     justify-content: space-between;
     font-size: 20px;
     font-weight: 50;
-    font-family:'Times New Roman', Times, serif;
-}
+    font-family:'Times New Roman', Times, serif; */
+/* } */
+
+
 #nav-part2{
-    padding-left: 400px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    /* padding-left: 400px; */
+    /* background-color: green; */
+}
+#features_right{
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* left: 0%; */
+    /* background-color: gray; */
+}
+
+
+#button_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2%;
+    margin-right: 2%;
+    position: relative;
+    /* font-size: 28px; */
+    /* left: 0%; */
+    /* background-color: white; */
+    
 }
 #nav-part2 button{
-    width: 70px;
+    width: 80px;
     height: 45px;
-    margin-left: 10px;;
+    margin-left: 10px;
     border: 1px solid black;
+}
+
+button{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
 }
-.button{
-    font-size: 15px;
-}
-#button-signup{
-    color:black;
-}
-#button-login{
+/* #button-login{
     color: white;
-}
+    background-color: red;
+} */
+
+/* #button-signup{
+    color:black;
+} */
+
 #login{
+    color: white;
     background-color: red;
 }
 #signup{
+    color: black;
     background-color: rgb(214, 210, 210);
 }
 
-/* ~~~~~~~~~~~Page-1~~~~~~~~~~~~~~~~~~ */
-/* MAIN CONTENT */
-#fixed-content, #dynamic-content{
+/* *****MAIN CONTENT****** */
+
+#main_content{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 231, 224);
     position: absolute;
-    top: 25%;
+}
+
+.main_text{
+    position: absolute;
+    top: 23%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#fixed-content h1, #dynamic-content h1{
-    font-size: 60px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 #dynamic-content{
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(58, 181, 97);
 }
 
 /* Card manipulation */
-.card{
+#card{
     padding: 5%;
     margin-top: 180px;
+    position: relative;
+    top: 10%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
 }
-.card img{
-    width: 19.5%;
-    /* height: 50vh; */
+#card img{
+    width: 19.5%;    
+    /* position: absolute; */
+    height: 50vh;
+    top: 100%;
     padding: 10px 5px;
+    margin-left: 2px;
     border-radius: 7%;
 }
 
 /* ~~~~~~~~~~~~~Second Page~~~~~~~~~~~~~~~~~ */
-.second-page{
+#second-page{
     width: 100%;
     height: 100%;
     background-color: rgb(255, 253, 146);
     display: flex;
+    position: relative;
 }
 /* **Col-1** */
-.col-1{
-    width: 50vw;
-    height: 100vh;
+#col-1{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.img{
+    position: absolute;
 }
 #img1{
     width: 204px;
     height: 285px;
-    position: absolute;
-    top: 155%;
+    top: 25%;
+    left: 15%;
 }
 #img2{
-    width: 164px;
-    height: 258px;
-    position: absolute;
-    top: 135%;
-    left: 30%;
+    width: 178px;
+    height: 218px;
+    /* position: absolute; */
+    top: 3%;
+    left: 60%;
 }
 #img3{
     width: 164px;
     height: 258px;
-    position: absolute;
-    top: 195%;
-    left: 30%;
+    /* position: absolute; */
+    top: 50%;
+    left: 60%;
 }
 #img4{
     width: 298px;
     height: 456px;
-    position: absolute;
-    top: 145%;
-    left: 13%;
+    /* position: absolute; */
+    top: 15%;
+    left: 30%;
 }
 
-/* **Col-2** */
-#h1-heading{
+/* ****Col-2*** */
+ #second-page #col-2{
     width: 50%;
-    height: 10%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: center;
+}
+#col_2_text{
+    width: 100%;
+    height: 60%;
+    position: relative;
+    /* top: 5%; */
+    margin-top: 20%;
+    margin-bottom: 20%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+} 
+.h1-text{
+    width: 100%;
+    height: 20%;
     position: absolute;
-    top: 160%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-}
-#h1-heading{
-    font-size: 34px;
-    color: rgb(195, 25, 82);
-    text-align: left;
-}
-#h3-heading{
-    width: 50%;
-    height: 10%;
-    color: rgb(195, 25, 82);
-    position: absolute;
-    top: 180%;
-    left: 73%; 
-    transform: translate(-50%, -50%);
-}
-#h3-heading h3{
-    font-size: 28px;
     text-align: center;
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    font-size: 32px;
+    /* transform: translate(-50%, -50%); */
+    /* background-color: black; */
+    /* color: rgb(195, 25, 82); */
 }
 
-#explore-button{
-    border: 2px thin black;
+.h3-text{
+    width: 100%;
+    height: 10%;
+    /* color: rgb(195, 25, 82); */
+    position: relative;
+    top: 35%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#col-2 #col_2_text #h1-heading{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    font-size: 32px;
+    /* transform: translate(-50%, -50%); */
+    /* background-color: black; */
+    color: rgb(195, 25, 82);
+}
+/* #h1-heading{
+    
+    
+    /* text-align: center; */
+/* } */
+#col_2_text #h3-heading{
+    width: 100%;
+    height: 10%;
+    color: rgb(195, 25, 82);
+    position: relative;
+    top: 35%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    /* left: 0%;     */
+    /* transform: translate(-50%, -50%); */
+}
+/* #h3-heading h3{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+
+} */
+.explore_button_class{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;   
     background-color: red;
-    width: 80px;
-    height: 45px;
+    width: 85px;
+    height: 50px;
     padding: 5px;
 }
-.second-page .col-2 #explore-button{
-    position: absolute;
-    top: 197%;
-    left: 70%;
+
+#explore_button{
+    /* border: 1px thin black; */
+    /* margin-top: 37%;
+    margin-left: 45%; */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;   
+    background-color: red;
+    width: 85px;
+    height: 50px;
+    padding: 5px;
+
 }
-#explore-button #text{
+#second-page #col-2 #explore_button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: white;
+}
+#explore_button #text a{
+    position: absolute;
     font-size: 18px;
     font-weight: bold;
     color: white;
-    padding: 2px;
+    padding: 5px;
     text-align: center;
-    padding-top: 10%;
+    /* padding-top: 10%; */
 
 }
 
 /* ~~~~~~~~~~~~~Third Page~~~~~~~~~~~~~~~~~ */
 
 /* **Col-1** */
-.third-page{
+#third-page{
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: rgb(218, 255, 246);
     display: flex;
+    position: relative;
 }
-.third-page #col-1{
+#third-page #col-1{
     width: 50%;
     height: 100%;
     /* background-color: red; */
+    position: relative;
 }
-.third-page #col-1 #h1-heading{
-    top: 275%;
-    left: 30%;
+#col-1 #col_1_text{
+    width: 100%;
+    height: 60%;
+    position: relative;
+    /* top: 5%; */
+    margin-top: 20%;
+    margin-bottom: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+#col_1_text #h1-heading{
+    position: absolute;
+    top: 15%;
+    /* top: 275%;*/
+    left:2%;
     color: rgb(0, 107, 108);
-    margin-bottom: 100px;
-    display: inline-block;
+    /* margin-bottom: 100px; */
+    /* display: inline-block; */
 }
-.third-page #col-1 #h3-heading{
-    top: 290%;
-    left: 25%;
+#col_1_text #h3-heading{
+    position: absolute;
+    top: 40%;
+    left: 2%;
     color: rgb(0, 107, 108);
     padding-top: 1px;
 }
-.third-page #col-1 #explore-button{
+#col_1_text #explore-button{
     position: absolute;
-    top: 300%;
-    left: 22%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-70%, -50%);
 }
+#explore-button #text{
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    /* padding-top: 10%; */
 
+}
 /* **Col-2** */
-.third-page #col-2{
+#third-page #col-2{
     width: 50%;
     height: 100%;
+    /* background-color: red; */
+    position:relative;
+    /* display: inline; */
+}
+
+#outer_image_div{
+    width: 50%;
+    height:50%;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    /* background-color: white; */
 }
 #img5{
-    width: 400px;
-    height: 420px;
+    width:100%;
+    height: 100%;
     position: absolute;
-    top: 242%;
-    right: 20%;
+    /* top: 0%;
+    left: 0%; */
 }
 .inside_image{
-    width: 90px;
-    height: 130px;
+    width: 100px;
+    height: 140px;
     position: absolute;
-    top: 287%;
+    top: 57%;
+    /* left: 200%; */
+    /* padding: 0%; */
 }
 #img6{
-    right: 40%;
+    left: 5%;
 }
 #img7{
-    right: 32%;
+    left: 35%;
 }
 #img8{
-    right: 24%;
+    left: 65%;
 }
-#col-2 #h1-heading{
-    width: 55%;
+#outer_image_div #h1-heading{
+    width: 100%;
     position: absolute;
-    top: 268%;
-    display: inline-block;
+    top: 15%;
+    left: 10%;
+    /* margin-right: 100%; */
+    /* display: inline-block; */
     text-align: left;
     color: white;
-    font-weight: 400;
-    font-size: 32px;
+    /* background-color: green; */
+    /* font-weight: lighter; */
+    font-size: 28px;
 }
-#top_left_image{
-    width: 35%;
-    height: 40%;
-    position: relative;
-    top: 3%;
+#outer_image_div #h1-heading h1{
+    font-weight: 400;
+}
+
+#top_right_image{
+    width: 30%;
+    height: 35%;
+    position: absolute;
+    top: 2%;
     left: 65%;
 }
 
 #img9{
     width: 100%;
     height: 100%;
-    position: relative;    
+    position: absolute;    
 } 
 
-#top_left_image #h2-heading h2{
+#top_right_image #h2-heading h2{
     color: white;
     position: absolute;
     bottom: 10%;
     left: 10%;
     font-size: 28px;
+    font-weight: 500;
+    /* background-color: aqua ; */
 }
 
 #mid_image{
     width: 23%;
     height: 23%;
-    position: relative;
-    top: 8%;
+    position: absolute;
+    top: 45%;
     left: 65%;
+    /* background-color: black; */
 }
 #img10{
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
+    /* top: 0%; */
 }
 #mid_image #h3-heading{
     width: 70%;
@@ -324,52 +548,61 @@ html, body{
 }
 
 #bottom_left_image{
-    width: 230px;
-    height: 172px;
-    position: relative;
-    top: 10%;
-    left: 100px;
-    overflow: hidden;
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    /* background-color: red; */
+    /* overflow: hidden; */
 }
 
 #img11{
     width: 100%;
-    position: relative;
-    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    /* overflow: hidden; */
 }
 
-#bottom_left_image #h2-heading{
-    width: 70%;
-    height: 100%;
+#bottom_left_image #h2-heading h2{
+    /* width: 100%; */
+    height: 40%;
     color: white;
-    font-size: 22px;
+    font-size: 28px;
     top: 40%;
-    left: 15%;
+    left: 10%;
+    /* text-align: left; */
     position: absolute;
+    /* background-color: red; */
+    display: inline;
 }   
 
 #bottom_right_image{
-    width: 230px;
-    height: 154px;
-    position: relative;
-    top: -14%;
-    left: 57%;
-    overflow: hidden;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    /* overflow: hidden; */
+    /* background-color: black; */
 }
+
 #img12{
     width: 100%;
-    height: 235px;
+    height: 100%;
     position: absolute;
 }
-#bottom_right_image #h2-heading{
+#bottom_right_image #h2-heading h2{
     width: 70%;
-    height: 100%;
+    height: 50%;
     color: white;
-    font-size: 22px;
-    font-weight: 300;
-    top: 65%;
-    left: 15%;
+    font-size: 28px;
+    font-weight: 500;
+    top: 40%;
+    left: 10%;
     position: absolute;
+    /* background-color: red; */
+    display: inline;
 } 
 
 

@@ -10,111 +10,132 @@
 
 <body>
     <div id="main">
-        <!-- NAV BAR -->
-        <header class="header">
-            <div id="nav-part1">
-                <div class="logo">
-                    <img src="https://logos-world.net/wp-content/uploads/2020/09/Pinterest-Logo.png" alt="logo"
-                        id="logo">
+        <!-- First page -->
+        <div id="first_page">
+
+            <!-- Nav Bar -->
+            <header id="header">
+                <div id="nav-part1">
+                    <div id="logo">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/09/Pinterest-Logo.png" alt="logo">
+                    </div>
+                    <div id="features_left">
+                        <a href="#" class="feature">Today</a>
+                        <a href="#" class="feature">Watch</a>
+                        <a href="#" class="feature">Explore</a>
+                    </div>
                 </div>
-                <div class="feature">
-                    <h3>Today</h3>
-                    <h3>Watch</h3>
-                    <h3>Explore</h3>
+
+                <div id="nav-part2">
+                    <div id="features_right">
+                        <a href="#" class="feature">About</a>
+                        <a href="#" class="feature">Business</a>
+                        <a href="#" class="feature">Blog</a>
+                    </div>
+                    <div id="button_div">
+                        <button type="button" id="login">Login
+                            <!-- <div id="button-login">Login</div> -->
+                        </button>
+                        <button type="button" id="signup">Signup
+                            <!-- <div id="button-signup">Signup</div> -->
+                        </button>
+                    </div>
+                </div>
+            </header>
+        
+
+            <!-- MAIN CONTENT -->
+            <div id="main_content">
+                <div id="fixed-content" class="main_text">
+                    <h1>Get your next</h1>
+                </div>
+                <div id="dynamic-content" class="main_text">
+                    <h1>outfit idea</h1>
+                </div>
+
+                <!-- Cards making procedure -->
+                <div id="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2NdrKTwtB0-1Lb0Bx7FEDO50QXbamzUrbsA&s"
+                        alt="Avatar1" id="card1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdK7789YaeAzLcPDbzwMGCYAf_6yv5kFXlmQ&s"
+                        alt="Avatar2" id="card2">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.glHVEXwLLZ8_f08YAALcAgHaLF&pid=Api&P=0&h=220" alt="Avatar3"
+                        id="card3">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.iRYadvCQyjTmw8R_3p1ArgHaLH&pid=Api&P=0&h=220" alt="Avatar4"
+                        id="card4">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqsMsJA_YcwCh6SUVN0sqNyb936t-yYCgeTw&s"
+                        alt="Avatar5" id="card5">
                 </div>
             </div>
-
-            <div id="nav-part2" , class="feature">
-                <h3>About</h3>
-                <h3>Business</h3>
-                <h3>Blog</h3>
-                <button type="button" id="login">
-                    <div class="button" id="button-login">Login</div>
-                </button>
-                <button type="button" id="signup">
-                    <div class="button" id="button-signup">Signup</div>
-                </button>
-            </div>
-        </header>
-
-        <!-- MAIN CONTENT -->
-        <div id="fixed-content">
-            <h1>Get your next</h1>
-        </div>
-        <div id="dynamic-content">
-            <h1>outfit idea</h1>
-        </div>
-
-        <!-- Cards making procedure -->
-        <div class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2NdrKTwtB0-1Lb0Bx7FEDO50QXbamzUrbsA&s"
-                alt="Avatar1" id="card1">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdK7789YaeAzLcPDbzwMGCYAf_6yv5kFXlmQ&s"
-                alt="Avatar2" id="card2">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.glHVEXwLLZ8_f08YAALcAgHaLF&pid=Api&P=0&h=220" alt="Avatar3"
-                id="card3">
-            <img src="https://tse3.mm.bing.net/th?id=OIP.iRYadvCQyjTmw8R_3p1ArgHaLH&pid=Api&P=0&h=220" alt="Avatar4"
-                id="card4">
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqsMsJA_YcwCh6SUVN0sqNyb936t-yYCgeTw&s"
-                alt="Avatar5" id="card5">
         </div>
 
         <!-- SEcond Page -->
-        <div class="second-page">
-            <div class="col-1">
-                <img src="https://s.pinimg.com/webapp/left-ccce7532.png" alt="1st_image" id="img1">
-                <img src="https://s.pinimg.com/webapp/topRight-6902088a.png" alt="2nd_image" id="img2">
-                <img src="https://s.pinimg.com/webapp/right-2bd1edfc.png" alt="3rd_image" , id="img3">
-                <img src="https://s.pinimg.com/webapp/center-2d76a691.png" alt="4th_image" id="img4">
+        <div id="second-page">
+            <div id="col-1">
+                <img src="https://s.pinimg.com/webapp/left-ccce7532.png" alt="1st_image" id="img1" class="img">
+                <img src="https://s.pinimg.com/webapp/topRight-6902088a.png" alt="2nd_image" id="img2" class="img">
+                <img src="https://s.pinimg.com/webapp/right-2bd1edfc.png" alt="3rd_image" , id="img3" class="img">
+                <img src="https://s.pinimg.com/webapp/center-2d76a691.png" alt="4th_image" id="img4" class="img">
             </div>
-            <div class="col-2">
-                <div id="h1-heading">
-                    <h1>Search for an idea </h1>
-                </div>
-                <div id="h3-heading">
-                    <h3>What do you want to try next? Think <br> of something you’re into—like “easy <br>chicken
-                        dinner”—and see what you <br> find.</h3>
-                </div>
-                <div id="explore-button">
-                    <div id="text">Explore</div>
-                </div>
 
+            <div id="col-2">
+                <div id="col_2_text">
+                    <div id="h1-heading" class="h1-text">
+                        <h1>Search for an idea</h1>
+                    </div>
+                    <div id="h3-heading" class="h3-text">
+                        <h3>What do you want to try next? Think <br> of something you’re into—like “easy <br>chicken
+                            dinner”—and see what you <br> find.</h3>
+                    </div>
+                    <div id="explore_button" class="explore_button_class">
+                        <div id="text"><a href="#">Explore</a></div>
+                    </div>
+                </div>
             </div>
 
         </div>
 
         <!-- Third Page -->
 
-        <div class="third-page">
+        <div id="third-page">
             <div id="col-1">
-                <div id="h1-heading">
-                    <h1>Save ideas you like</h1>
-                </div>
-                <div id="h3-heading">
-                    <h3>Collect your favorites so you can <br> get back to them later</h3>
-                </div>
-                <div id="explore-button">
-                    <div id="text">
-                        Explore
+                <div id="col_1_text">
+                    <div id="h1-heading" class="h1-text">
+                        <h1>Save ideas you like</h1>
+                    </div>
+                    <div id="h3-heading" class="h3-text">
+                        <h3>Collect your favorites so you can <br> get back to them later</h3>
+                    </div>
+                    <div id="explore-button" class="explore_button_class">
+                        <div id="text">
+                            Explore
+                        </div>
                     </div>
                 </div>
             </div>
+
+
             <div id="col-2">
-                <img src="https://s.pinimg.com/webapp/future-home-vibes-adb19e98.png" alt="img5" id="img5">
-                <img src="https://s.pinimg.com/webapp/future-home1-b8bc36e8.png" alt="img6" class="inside_image"
-                    id="img6">
-                <img src="https://s.pinimg.com/webapp/future-home2-31c812cc.png" alt="img7" class="inside_image"
-                    id="img7">
-                <img src="https://s.pinimg.com/webapp/future-home3-037e8d49.png" alt="img8" class="inside_image"
-                    id="img8">
-                <div id="h1-heading">
-                    <h1>Fern future <br> home vibes</h1>
+                <div id="outer_image_div">
+                    <img src="https://s.pinimg.com/webapp/future-home-vibes-adb19e98.png" alt="img5" id="img5">
+                    <img src="https://s.pinimg.com/webapp/future-home1-b8bc36e8.png" alt="img6" class="inside_image"
+                            id="img6">
+                    <img src="https://s.pinimg.com/webapp/future-home2-31c812cc.png" alt="img7" class="inside_image"
+                        id="img7">
+                    <img src="https://s.pinimg.com/webapp/future-home3-037e8d49.png" alt="img8" class="inside_image"
+                        id="img8">
+                    <div id="h1-heading">
+                        <h1>Fern future <br> home vibes</h1>
+                    </div>
                 </div>
-                <div id="top_left_image">
+                        
+                <!-- </div> -->
+                    
+                <div id="top_right_image">
                     <img src="https://s.pinimg.com/webapp/scandinavian-bedroom-696dfba5.png" alt="img9" id="img9">
                     <div id="h2-heading">
-                        <h2>My <br> Scandian <br>bedroom</h2>
+                        <h2>My <br> Scandinavian <br>bedroom</h2>
                     </div>
                 </div>
 
@@ -128,7 +149,7 @@
                 <div id="bottom_left_image">
                     <img src="https://s.pinimg.com/webapp/serve-my-drinks-4de83489.png" alt="img11" id="img11">
                     <div id="h2-heading">
-                        <h2>Serve my <br>drinks in</h2>
+                        <h2>Serve my <br>drinks in <br>style</h2>
                     </div>
                 </div>
 
