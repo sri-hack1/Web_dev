@@ -88,7 +88,10 @@ html, body{
     color: black;
     font-size: 20px;
     /* color: black; */
- 
+}
+
+.feature:hover{
+    text-decoration: underline;
 }
 /* .feature h3{
     padding: 15px;
@@ -158,9 +161,15 @@ button{
     color: white;
     background-color: red;
 }
+#login:hover{
+    background-color: rgb(204, 12, 12);
+}
 #signup{
     color: black;
     background-color: rgb(214, 210, 210);
+}
+#signup:hover{
+    background-color: rgb(185, 181, 181);
 }
 
 /* *****MAIN CONTENT****** */
@@ -346,6 +355,7 @@ button{
     padding: 5px;
 }
 
+
 #explore_button{
     /* border: 1px thin black; */
     /* margin-top: 37%;
@@ -359,6 +369,9 @@ button{
     height: 50px;
     padding: 5px;
 
+}
+#explore_button:hover{
+    background-color: rgb(201, 21, 21);
 }
 #second-page #col-2 #explore_button{
     position: absolute;
@@ -376,6 +389,9 @@ button{
     text-align: center;
     /* padding-top: 10%; */
 
+}
+.explore_button_class:hover{
+    background-color: rgb(201, 21, 21);
 }
 
 /* ~~~~~~~~~~~~~Third Page~~~~~~~~~~~~~~~~~ */
@@ -609,14 +625,15 @@ button{
 /* ~~~~~~ Final PAge ~~~~~~~~~~~ */
 
 /* Background image set */
+
 #background-image{
     width: 100vw;
     height: 100vh;
     background-image: url(https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    background-color: black;
-    opacity: 0.8;
+    /* background-color: black; */
+    opacity: 0.9;
     position: relative;
     display: flex;
 }
@@ -631,8 +648,10 @@ button{
 #background-image #col-1 #h1-heading{
     position: absolute;
     top: 35%;
-    left: 45%;
+    left: 20%;
     color: white;
+    /* background-color: red; */
+    font-size: 32px;
 }
 
 /* Col-2 */
@@ -730,6 +749,9 @@ button{
     border: 1px solid red;
     color: white;
 }
+#continue_button button:hover{
+    background-color: rgb(204, 12, 12);
+}
 
 #or{
     font-weight: bolder;
@@ -746,6 +768,9 @@ button{
     border: 1px solid black;
     background-color: rgb(243, 242, 242);
     margin-top: 7px;
+}
+#continue_google:hover{
+    background-color: rgb(185, 181, 181);
 }
 
 #end_text{
@@ -782,4 +807,7 @@ button{
     font-weight: 700;  
     padding: 3px;
     text-decoration: none;
+}
+.footer-features:hover{
+    text-decoration: underline;
 }
