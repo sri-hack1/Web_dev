@@ -160,9 +160,11 @@ button{
 #login{
     color: white;
     background-color: red;
+    /* transition: 0.5s; */
 }
 #login:hover{
     background-color: rgb(204, 12, 12);
+    /* transform: translateX(100px); */
 }
 #signup{
     color: black;
@@ -202,7 +204,7 @@ button{
     padding: 5%;
     margin-top: 180px;
     position: relative;
-    top: 10%;
+    top: 12%;
     /* background-color: red; */
     display: flex;
     justify-content: center;
@@ -215,7 +217,15 @@ button{
     padding: 10px 5px;
     margin-left: 2px;
     border-radius: 7%;
+    transition: transform 0.3s ease;
+    box-shadow: 20px 4px 10px rgba(11, 11, 11, 0.5);
+    
 }
+#card img:hover {
+    transform: scale(1.1);
+    /* transform: translateY(100px); */
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); */
+  }
 
 /* ~~~~~~~~~~~~~Second Page~~~~~~~~~~~~~~~~~ */
 #second-page{
