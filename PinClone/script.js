@@ -21,4 +21,17 @@ function feature_off(){
 
 feature_off()
 
+// Making function black background on click
+
+// function bg_black(){
+//     features.forEach(function(onclick){
+//         onclick.addEventListener("onclick", function(){
+//             onclick.style.border = "50px";
+//             // border-top-left-radius: "50px";
+//             // border-bottom-left-radius: "50px";
+//             // border-top-right-radius: "50px";
+//             // border-bottom-right-radius: "50px";
+//         })
+//     })
+// }
 
