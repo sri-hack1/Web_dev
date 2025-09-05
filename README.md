@@ -14,6 +14,15 @@ A responsive, accessible clone of the Pinterest home feed built with **HTML**, *
 - Lightweight, framework-free implementation using semantic HTML, modern CSS, and vanilla JS.  
 
 ---
+## Screenshots
+
+![Home Grid Desktop](https://github.com/sri-hack1/Web_dev/blob/main/assets/Screenshot%202025-09-05%20094131.png)
+
+![Home Grid Desktop](https://github.com/sri-hack1/Web_dev/blob/main/assets/Screenshot%202025-09-05%20094507.png)
+
+
+
+
 
 ## Tech Stack
 
@@ -29,20 +38,20 @@ No build tools or frameworks are required.
 WEB_DEV/
 ├─ README.md
 ├─ LICENSE
-├─ asstes/
-|  ├─ Screenshot 2025-09-05 094131.png
-|  ├─ Screenshot 2025-09-05 094426.png
-|  ├─ Screenshot 2025-09-05 094437.png
-|  ├─ Screenshot 2025-09-05 094507.png
-|  
-├─ PinClone/
-|   ├─ index.html
-|   ├─ script.js
-| ├─ style2.css
-|   ├─ Today/
-|       ├─ today.css
-|       ├─ today.html
-|       ├─ today.js
+├─ assets/
+│  └─ screenshots/
+│     ├─ home-desktop.png
+│     ├─ home-tablet.png
+│     ├─ home-alt.png
+│     └─ home-mobile.png
+└─ PinClone/
+   ├─ index.html
+   ├─ style.css
+   ├─ script.js
+   └─ Today/
+      ├─ today.html
+      ├─ today.css
+      └─ today.js
 
 
 
